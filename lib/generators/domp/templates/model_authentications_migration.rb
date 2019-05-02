@@ -1,5 +1,5 @@
 <% module_namespacing do -%>
-class Create<%= class_name %>Authentications < ActiveRecord::Migration
+class Create<%= class_name %>Authentications < ActiveRecord::Migration[5.1]
   def change
     create_table "<%= class_name.downcase %>_authentications", :force => true do |t|
       t.integer  "<%= class_name.downcase %>_id"
